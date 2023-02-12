@@ -1,0 +1,28 @@
+{
+    "log": {
+        "loglevel": "debug"
+    },
+    "inbounds": [{
+      "port": 8080,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+            { "id": "tu-id-aqui-xd", "alterId":128, "level":1 },
+            { "id": "tu-otro-id-aqui-xd", "alterId":129, "level":1 }
+        ]
+      },
+      "streamSettings": {
+          "network":"ws",
+          "wsSettings": {
+            "headers": {
+              "host":"tu.host.v2ray.aqui.com"
+            },
+            "path":"/st1"
+          }
+      }
+    }],
+    "outbounds": [{
+      "protocol": "freedom",
+      "settings": {}
+    }]
+}
